@@ -13,68 +13,40 @@ HB = Client(
 
 START_TEXT = """**
 HI {}, 
-I AM A  ADVANCED YOUTUBE DOWNLOADER BOT
 I CAN DOWNLOAD YOUTUBE VIDEOS ,THUMBNAIL
 AND PLAYLIST VIDEOS....
-ONE OF THE SPPEDEST YOUTUBE BOT 
-I CAN DOWNLOAD 911mb VIDEOS
-IN 1min 
-MADE BY @TELSABOTS**"""
+MADE BY @signature_98**"""
 
 HELP_TEXT = """**
-    YOUTUBE VIDEO
-SENT ANY URL .......
-THEN SELECT AVAILABLE QUALITY
-
-    PLAYLIST
-SENT ANY URL .....
-THEN WAIT BOT WILL SENT
-VIDEOS IN HIGH QUALITY...
-
-MADE BY @TELSABOTS**
+GIVE ME A YOUTUBE URL ......
+MADE BY @signature_98**
 """
 
 ABOUT_TEXT = """
- 🤖<b>BOT :YOUTUBE DOWNLOADER </b>
- 
- 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
- 
- 📢<b>CHANNEL :</b>@TELSABOTS
- 
- 📝<b>Language :</b>  <a href='https://python.org/'>Python3</a>
- 
- 🧰<b>Frame Work :</b>  <a href='https://pyrogram.org/'>Pyrogram</a>
- 
- 🤩<b>SOURCE :</b>  <a href='https://youtu.be/xyW5fe0AkXo'>CLICK HERE</a>
- 
+ 🤖<b>@signature_98 </b>
  
 """
 
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
-        ],[
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
-        InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('🤗ABOUT🤗', callback_data='about')
         ]]
     )
 
 
 result_buttons = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/world_wide_movies')
         ],[
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/world_wide_movies')
+    
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
@@ -83,8 +55,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/world_wide_movies')
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
@@ -95,8 +66,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
 SOURCE_TEXT = """<b>PRESS SOURCE BUTTON \n WATCH MY VIDEO AND\nCHECK DESCRIPTION FOR SOURCE CODE</b>"""
 SOURCE_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('✅SOURCE✅', url='https://youtu.be/xyW5fe0AkXo'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/world_wide_movies')
         ],[
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
         ]]
@@ -104,14 +74,13 @@ SOURCE_BUTTONS = InlineKeyboardMarkup(
 
 result_buttons = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS')
         ],[
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
         ]]
     )
 
-result_text = """**JOIN @TELSABOTS**"""
+result_text = """**JOIN @world_wide_movies"""
 
 @HB.on_message(filters.command(["start"]))
 async def start(bot, update):
@@ -393,7 +362,7 @@ async def ytdl(_, update):
     
     await  HB.send_video(
             chat_id = update.chat.id, 
-            caption=(f"⭕️ PLAYLIST : "+ pyt.title + "\n📥 DOWNLOADED " + "\n✅ JOIN @TELSABOTS" ),
+            caption=(f"⭕️ PLAYLIST : "+ pyt.title + "\n📥 DOWNLOADED " + "\n✅ JOIN @world_wide_movies" ),
             video = phd.download(),
             
         )
